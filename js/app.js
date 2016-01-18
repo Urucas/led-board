@@ -10,5 +10,5 @@ angular.module("LedsSimulatorApp", [])
     var state = $scope.sets[set][row][col]
     $scope.sets[set][row][col] = state == 1 ? 0 : 1
   }
-
+  
 }])
