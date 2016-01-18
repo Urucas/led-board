@@ -1,0 +1,24 @@
+body {
+  margin:0px;
+  padding: 0px;
+}
+
+.led-col {
+  width:24px;
+  height:24px;
+  border:none;
+  margin:2px;
+  cursor:pointer;
+}
+
+.led-off {
+  background:url('../img/led-off.png');
+  background-repeat:no-repeat;
+  background-size:24px 24px;
+}
+
+.led-on {
+  background:url('../img/led-on.png');
+  background-repeat:no-repeat;
+  background-size:24px 24px;
+}

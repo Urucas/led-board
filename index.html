@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="LedsSimulatorApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>Led Board</title>
+  <meta name="author" content="@urucas">
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body ng-controller="LedsController">
+  <div class="led-set" ng-repeat="(i, set) in sets track by $index">
+    <div class="led-row" ng-repeat="(j, row) in set track by $index">
+      <button class="led-col" ng-repeat="(k, col) in row track by $index" ng-class="isLedOn(i, j, k)" ng-click="toggleLed(i, j, k)"></button>
+    </div>
+  </div>
+
+  <textarea disabled>{{sets}}</textarea>
+
+  <script src="angular/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
