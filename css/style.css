@@ -3,6 +3,11 @@ body {
   padding: 0px;
 }
 
+.led-board {
+  display:inline-block;
+  padding:12px;
+}
+
 .led-col {
   width:24px;
   height:24px;
